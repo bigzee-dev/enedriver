@@ -1,5 +1,5 @@
 import type { Course } from "@/lib/content";
-import CourseArtwork from "./CourseArtwork";
+
 import { ClockIcon, CheckIcon } from "./Icons";
 import { WHATSAPP_LINK } from "@/lib/constants";
 import Image from "next/image";
