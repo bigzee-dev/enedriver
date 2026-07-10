@@ -4,7 +4,7 @@ import { TargetMarkets } from "@/lib/content";
 import CourseCard from "./CourseCard";
 import SectionHeading from "./SectionHeading";
 
-export default function Courses({ course }: { course: Course }) {
+export default function Courses() {
   return (
     <section
       id="courses"
