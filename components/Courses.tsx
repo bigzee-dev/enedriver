@@ -1,5 +1,5 @@
 import { COURSES } from "@/lib/content";
-import type { Course } from "@/lib/content";
+
 import { TargetMarkets } from "@/lib/content";
 import CourseCard from "./CourseCard";
 import SectionHeading from "./SectionHeading";

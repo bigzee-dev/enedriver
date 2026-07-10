@@ -4,12 +4,6 @@
  * edit wording in one place.
  */
 
-// export type CourseArtworkKey =
-//   | "defensive"
-//   | "emergency"
-//   | "handover"
-//   | "earthmoving";
-
 export interface Course {
   id: string;
   index: string;
