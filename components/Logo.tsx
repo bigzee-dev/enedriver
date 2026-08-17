@@ -14,7 +14,7 @@ export default function Logo({ className = "" }: { className?: string }) {
         width={200}
         height={110}
         priority
-        className="block h-24 w-auto dark:hidden"
+        className="block h-14 w-auto dark:hidden"
       />
       {/* Dark-mode logo (light ink) */}
       <Image
@@ -23,7 +23,7 @@ export default function Logo({ className = "" }: { className?: string }) {
         width={200}
         height={110}
         priority
-        className="hidden h-24 w-auto dark:block"
+        className="hidden h-14 w-auto dark:block"
       />
     </span>
   );

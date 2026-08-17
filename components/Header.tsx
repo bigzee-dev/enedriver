@@ -7,11 +7,11 @@ import { WHATSAPP_MESSAGE_LINK } from "@/lib/constants";
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { label: "Courses", href: "#courses" },
+  { label: "Courses", href: "/courses" },
   { label: "Why us", href: "#why-us" },
   { label: "Who we train", href: "#industries" },
   { label: "How it works", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact Us", href: "#contact" },
 ];
 
 export default function Header() {
@@ -19,12 +19,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-hairline bg-surface/85 backdrop-blur-md">
-      <div className="mx-auto flex h-28 max-w-7xl items-center justify-between px-5 sm:px-2">
-        <Link
-          href="#top"
-          className="flex items-center"
-          aria-label="Back to top"
-        >
+      <div className="mx-auto flex py-1.5 max-w-7xl items-center justify-between px-4 sm:px-2">
+        <Link href="/" className="flex items-center" aria-label="Back to top">
           <Logo />
         </Link>
 
@@ -33,7 +29,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-body transition-colors hover:text-brand-900 dark:hover:text-brand-50"
+              className="text-base font-medium text-body transition-colors hover:text-brand-900 dark:hover:text-brand-50"
             >
               {link.label}
             </a>
@@ -43,9 +39,9 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className="hidden items-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-800 sm:inline-flex dark:bg-accent-400 dark:text-brand-990 dark:hover:bg-accent-600"
+            className="font-sans hidden items-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-800 sm:inline-flex dark:bg-accent-400 dark:text-brand-990 dark:hover:bg-accent-600"
           >
-            Enquire now
+            Enquire Now
           </a>
 
           <button

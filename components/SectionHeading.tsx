@@ -13,7 +13,9 @@ export default function SectionHeading({
 }) {
   const centered = align === "center";
   const eyebrowColor =
-    tone === "inverted" ? "text-accent-400" : "text-brand-700 dark:text-accent-400";
+    tone === "inverted"
+      ? "text-accent-400"
+      : "text-brand-700 dark:text-accent-400";
   const titleColor = tone === "inverted" ? "text-white" : "";
   const introColor = tone === "inverted" ? "text-brand-100" : "text-muted";
 
@@ -32,13 +34,15 @@ export default function SectionHeading({
           />
         )}
         <h2
-          className={`font-display text-3xl font-bold sm:text-4xl ${titleColor}`}
+          className={`font-display text-3xl font-semibold tracking-wide sm:text-4xl ${titleColor}`}
         >
           {title}
         </h2>
       </div>
       {intro && (
-        <p className={`mt-4 text-base leading-relaxed sm:text-lg ${introColor}`}>
+        <p
+          className={`font-sans mt-4 text-base leading-relaxed sm:text-base ${introColor}`}
+        >
           {intro}
         </p>
       )}

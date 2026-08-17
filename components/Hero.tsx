@@ -65,37 +65,6 @@ export default function Hero() {
         <circle cx="78%" cy="50%" r="230" fill="#005878" fillOpacity="0.28" />
         <circle cx="78%" cy="50%" r="130" fill="#33bff2" fillOpacity="0.05" />
 
-        {/* Diagonal accent lines */}
-        <div className="hidden md:block">
-          <line
-            x1="38%"
-            y1="0"
-            x2="58%"
-            y2="100%"
-            stroke="#33bff2"
-            strokeWidth="1"
-            strokeOpacity="0.07"
-          />
-          <line
-            x1="48%"
-            y1="0"
-            x2="68%"
-            y2="100%"
-            stroke="#33bff2"
-            strokeWidth="1"
-            strokeOpacity="0.05"
-          />
-          <line
-            x1="28%"
-            y1="0"
-            x2="48%"
-            y2="100%"
-            stroke="#33bff2"
-            strokeWidth="1"
-            strokeOpacity="0.05"
-          />
-        </div>
-
         {/* Decorative polygon — bottom right */}
         <polygon
           points="92%,75% 95%,68% 98%,75% 95%,82%"
@@ -104,14 +73,6 @@ export default function Hero() {
           strokeWidth="1"
           strokeOpacity="0.2"
         />
-
-        {/* Floating accent dots */}
-        {/* <circle cx="20%" cy="82%" r="4" fill="#33bff2" fillOpacity="0.25" />
-        <circle cx="72%" cy="18%" r="3" fill="#33bff2" fillOpacity="0.3" />
-        <circle cx="58%" cy="88%" r="5" fill="#005878" fillOpacity="0.6" />
-        <circle cx="14%" cy="42%" r="2.5" fill="#33bff2" fillOpacity="0.2" />
-        <circle cx="88%" cy="88%" r="6" fill="#33bff2" fillOpacity="0.08" />
-        <circle cx="3%" cy="65%" r="3" fill="#33bff2" fillOpacity="0.15" /> */}
 
         {/* Horizontal rule lines */}
         <line
@@ -141,28 +102,28 @@ export default function Hero() {
             {COUNTRY}
           </span>
 
-          <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.05] text-white/80 sm:text-5xl lg:text-6xl">
+          <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] text-white/80 sm:text-5xl lg:text-6xl tracking-wide">
             Accredited driver training,{" "}
             <span className="text-brand-600">brought to your site.</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-brand-100">
+          <p className="font-sans mt-6 max-w-xl text-base leading-relaxed text-brand-100">
             We prepare fleets, operators and drivers for government, parastatal
             and industry standards — with instructors who bring over 20 years on
             the road. We come to you, anywhere in {COUNTRY}.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-full bg-accent-400 px-6 py-3 text-base font-semibold text-brand-990 transition-colors hover:bg-accent-600"
+              className="inline-flex items-center gap-2 rounded-lg bg-accent-400 px-6 py-3 text-base font-semibold text-brand-990 transition-colors hover:bg-accent-600"
             >
               Contact us
               <ArrowRightIcon className="h-5 w-5" />
             </a>
             <a
               href="#courses"
-              className="inline-flex items-center gap-2 bg-brand-900 rounded-full border border-white/25 px-6 py-3 text-base font-semibold text-white transition-colors hover:border-white/60 hover:bg-white/5"
+              className="inline-flex items-center gap-2 bg-brand-900 rounded-lg border border-white/25 px-6 py-3 text-base font-semibold text-white transition-colors hover:border-white/60 hover:bg-white/5"
             >
               View courses
               <ArrowRightIcon className="h-5 w-5" />

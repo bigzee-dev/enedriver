@@ -7,8 +7,8 @@
 */
 
 @theme {
-  --font-display: var(--font-montserrat);
-  --font-sans: var(--font-plex-sans);
+  --font-display: var(--font-serif);
+  --font-sans: var(--font-sans);
   --font-mono: var(--font-plex-mono);
 
   /* Brand blues (darkest -> brightest as provided by the client) */

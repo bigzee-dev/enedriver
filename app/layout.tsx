@@ -1,24 +1,20 @@
 import type { Metadata } from "next";
-import { Montserrat, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import { DM_Serif_Text, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { COMPANY_NAME, TAGLINE } from "@/lib/constants";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+const dmSerifText = DM_Serif_Text({
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  weight: ["400"],
+  variable: "--font-serif",
 });
 
-const plexSans = IBM_Plex_Sans({
-  variable: "--font-plex-sans",
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-});
-
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-plex-mono",
-  subsets: ["latin"],
-  weight: ["400", "500"],
+  variable: "--font-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -33,21 +29,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      data-scroll-behavior="smooth"
-      className={`${montserrat.variable} ${plexSans.variable} ${plexMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
-        <a
-          href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-brand-900 focus:px-4 focus:py-2 focus:text-white"
-        >
-          Skip to content
-        </a>
-        {children}
-        <span className="sr-only">{TAGLINE}</span>
-      </body>
-    </html>
+    <>
+      <Header />
+      <html
+        lang="en"
+        data-scroll-behavior="smooth"
+        className={`${dmSerifText.variable} ${dmSans.variable} h-full antialiased`}
+      >
+        <body className="min-h-full flex flex-col">
+          <a
+            href="#main"
+            className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-brand-900 focus:px-4 focus:py-2 focus:text-white"
+          >
+            Skip to content
+          </a>
+          {children}
+          <span className="sr-only">{TAGLINE}</span>
+        </body>
+      </html>
+      <Footer />
+    </>
   );
 }

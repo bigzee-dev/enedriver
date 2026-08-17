@@ -1,10 +1,10 @@
 import { COURSES } from "@/lib/content";
 
 import { TargetMarkets } from "@/lib/content";
-import CourseCard from "./CourseCard";
-import SectionHeading from "./SectionHeading";
+import CourseCard from "../CourseCard";
+import SectionHeading from "../SectionHeading";
 
-export default function Courses() {
+export default function CourseList() {
   return (
     <section
       id="courses"
