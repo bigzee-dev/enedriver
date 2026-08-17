@@ -7,9 +7,8 @@
 */
 
 @theme {
-  --font-display: var(--font-serif);
+  --font-display: var(--font-body);
   --font-sans: var(--font-sans);
-  --font-mono: var(--font-plex-mono);
 
   /* Brand blues (darkest -> brightest as provided by the client) */
   --color-brand-50: #eef4f8;

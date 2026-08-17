@@ -3,6 +3,7 @@ import AccreditationBar from "@/components/AccreditationBar";
 import WhatWeDo from "@/components/whatwedo";
 import CourseLinks from "@/components/courselinks";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import Services from "@/components/Services";
 import Industries from "@/components/Industries";
 import CtaBanner from "@/components/ctabanner";
 import Process from "@/components/Process";
@@ -18,6 +19,7 @@ export default function Home() {
         <WhatWeDo />
         <CourseLinks />
         <WhyChooseUs />
+        <Services />
         <Industries />
         <CtaBanner />
         <Process />

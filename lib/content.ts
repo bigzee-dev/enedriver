@@ -86,6 +86,38 @@ export const COURSES: Course[] = [
   },
 ];
 
+export interface Service {
+  id: string;
+  title: string;
+  summary: string;
+  img: string;
+}
+
+/** Services offered alongside the training catalogue — used in the "Our Services" section. */
+export const SERVICES: Service[] = [
+  {
+    id: "driver-hire",
+    title: "Driver Hire Agency",
+    summary:
+      "Vetted, licence-checked drivers placed with your operation — short-term cover or long-term placements across every vehicle category.",
+    img: "/defensive.jpg",
+  },
+  {
+    id: "vehicle-delivery",
+    title: "Commercial Vehicle Deliveries & Collection",
+    summary:
+      "We deliver and collect commercial vehicles locally and across borders, so your fleet reaches site without tying up your own drivers.",
+    img: "/trucks.jpg",
+  },
+  {
+    id: "registration-bookings",
+    title: "Vehicle Registration & Transport Tests",
+    summary:
+      "We handle commercial vehicle registration and arrange transport test appointments and bookings — the paperwork and queues are ours, not yours.",
+    img: "/71713.jpg",
+  },
+];
+
 export const TargetMarkets: string[] = [
   "Job seekers entering the trade",
   "Fleet operators",

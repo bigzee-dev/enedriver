@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { DM_Serif_Text, DM_Sans } from "next/font/google";
+import { Public_Sans, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { COMPANY_NAME, TAGLINE } from "@/lib/constants";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const dmSerifText = DM_Serif_Text({
+const publicSans = Public_Sans({
   subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-serif",
+  variable: "--font-body",
+  weight: ["400", "500", "600", "700"], // pick what you need
 });
 
 const dmSans = DM_Sans({
@@ -34,7 +34,7 @@ export default function RootLayout({
       <html
         lang="en"
         data-scroll-behavior="smooth"
-        className={`${dmSerifText.variable} ${dmSans.variable} h-full antialiased`}
+        className={`${publicSans.variable} ${dmSans.variable} h-full antialiased`}
       >
         <body className="min-h-full flex flex-col">
           <a
