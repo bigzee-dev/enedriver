@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import AccreditationBar from "@/components/AccreditationBar";
 import WhatWeDo from "@/components/whatwedo";
 import CourseLinks from "@/components/courselinks";
+import Qualifications from "@/components/Qualifications";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Services from "@/components/Services";
 import Industries from "@/components/Industries";
@@ -18,6 +19,7 @@ export default function Home() {
         <AccreditationBar />
         <WhatWeDo />
         <CourseLinks />
+        <Qualifications />
         <WhyChooseUs />
         <Services />
         <Industries />

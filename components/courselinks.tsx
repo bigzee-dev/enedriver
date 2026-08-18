@@ -2,15 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { COURSES } from "@/lib/content";
 import SectionHeading from "./SectionHeading";
+import { ArrowRightIcon } from "./Icons";
 
 const features = ["Proudly serving Maun and businesses across Botswana"];
-
-const stats = [
-  { value: "10+", label: "Years in Business" },
-  { value: "500+", label: "Products Available" },
-  { value: "2013", label: "Est. in Maun" },
-  { value: "2014", label: "Est. in Maunn" },
-];
 
 export default function CourseLinks() {
   return (
@@ -23,13 +17,13 @@ export default function CourseLinks() {
       />
       <div className="absolute inset-0 z-0 bg-black/50" />
       <div className="relative z-10 px-4 py-12">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-5xl">
           <div className="grid items-center gap-4 lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-8">
               {/* Heading */}
               <SectionHeading
                 eyebrow="Short courses"
-                title="Accredited training programmes"
+                title="Our Training Programmes"
                 intro="Four focused programmes covering every licence category and specialist discipline — each delivered on your site, to your schedule."
                 tone="inverted"
               />
@@ -50,7 +44,7 @@ export default function CourseLinks() {
             </div>
           </div>
         </div>
-        <div className="mx-auto max-w-6xl mt-8">
+        <div className="mx-auto max-w-5xl mt-8">
           <div className="overflow-hidden rounded-xl border border-neutral-500">
             <div className="grid grid-cols-1">
               {/* ── Right — Image ── */}
@@ -63,10 +57,15 @@ export default function CourseLinks() {
                   {COURSES.map((course) => (
                     <div
                       key={course.id}
-                      className="rounded-xl border border-neutral-400 bg-neutral-700/60 px-5 py-4 text-center backdrop-blur-md first:pl-0 last:pr-0"
+                      className="relative flex h-full justify-center items-center rounded-sm border border-neutral-400 bg-neutral-700/60 px-5 py-4 text-center backdrop-blur-md first:pl-0 last:pr-0"
                     >
+                      {/* Fixed at the top of every card so the numbers line up
+                          regardless of how many lines the title wraps to. */}
+                      <span className="absolute top-0 left-0 flex h-6 w-6 shrink-0 items-center justify-center rounded-tl-sm rounded-br-sm bg-white/60 font-mono text-sm font-semibold text-brand-990">
+                        {course.index}
+                      </span>
                       <p
-                        className={`font-heading text-lg font-medium text-neutral-200`}
+                        className={`font-sans mt-1 text-base  text-neutral-200`}
                       >
                         {course.title}
                       </p>
@@ -88,6 +87,16 @@ export default function CourseLinks() {
                 </div> */}
               </div>
             </div>
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <Link
+              href="/courses"
+              className="border border-neutral-400 inline-flex items-center gap-2 rounded-lg bg-brand-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-800 uppercase"
+            >
+              Learn more about our courses
+              <ArrowRightIcon className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </div>

@@ -6,8 +6,8 @@ import { FaRoute } from "react-icons/fa";
 const REASONS = [
   {
     icon: IoSchool,
-    title: "Fully accredited",
-    body: "BQA accredited and HRDC registered — training that satisfies procurement, compliance and audit requirements.",
+    title: "Quality Services",
+    body: "We provide local and international commercial vehicle collection and delivery, plus registration, tests and bookings.",
   },
   {
     icon: FaLocationDot,
@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
           {REASONS.map(({ icon: Icon, title, body }) => (
             <div key={title} className=" border border-white/10 p-6">
               <span className="flex h-12 w-12 items-center justify-center  text-accent-400">
-                <Icon className="h-12 w-12" />
+                <Icon className="h-10 w-10" />
               </span>
               <h3 className="mt-5 font-display text-lg font-bold text-white">
                 {title}

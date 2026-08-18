@@ -64,11 +64,11 @@ export default function WhatWeDo() {
                 efficient fleets.
               </p>
               <p className="text-base leading-relaxed text-body">
-                As a BQA (Botswana Qualifications Authority) Accredited
-                institution, we deliver high-quality training that meets
-                nationally recognised standards. Although we are based in
-                Gaborone, we provide training nationwide by coming to your
-                location.
+                We provide high-quality training that meets nationally
+                recognised standards, along with services such as commercial
+                vehicle collection and delivery, vehicle registration, and
+                testing. Although we are based in Gaborone, we provide training
+                nationwide by travelling to your location.
               </p>
             </div>
 

@@ -43,3 +43,12 @@ export const LOCATION_ADDRESS = "Mogonono, Gaborone, Botswana";
 /** Base of operations. The consultancy is mobile and trains nationwide. */
 export const CITY = "Gaborone";
 export const COUNTRY = "Botswana";
+
+/**
+ * Node mail service that receives the /contact enquiry form.
+ * PLACEHOLDER path — confirm the exact route with the API owner.
+ */
+export const CONTACT_API_URL = "https://emailapi.deltaworx.co.bw/api/contact";
+
+/** How long we wait on the mail service before showing the user an error. */
+export const CONTACT_API_TIMEOUT_MS = 15_000;

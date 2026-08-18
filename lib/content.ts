@@ -86,6 +86,40 @@ export const COURSES: Course[] = [
   },
 ];
 
+export interface Accreditation {
+  id: string;
+  /** Full authority name — also used as the logo's alt text. */
+  name: string;
+  logo: string;
+  width: number;
+  height: number;
+  /**
+   * True when the supplied logo is light-on-transparent and can sit straight
+   * on a dark panel; false when it needs a white plate behind it.
+   */
+  logoOnDark: boolean;
+}
+
+/** Accrediting bodies — used in the "Qualifications" section. */
+export const ACCREDITATIONS: Accreditation[] = [
+  {
+    id: "hrdc",
+    name: "Human Resource Development Council",
+    logo: "/hrdc-logo.svg",
+    width: 467,
+    height: 261,
+    logoOnDark: true,
+  },
+  {
+    id: "bqa",
+    name: "Botswana Qualifications Authority",
+    logo: "/bqa-logo.jpg",
+    width: 712,
+    height: 631,
+    logoOnDark: false,
+  },
+];
+
 export interface Service {
   id: string;
   title: string;
@@ -136,6 +170,54 @@ export const TargetMarkets: string[] = [
   "Plant hire & compliance",
   "Local authorities",
   "Fleet & equipment operators",
+];
+
+/** Years the consultancy has been operating — headline stat in the courses promo. */
+export const EXPERIENCE_YEARS = 20;
+
+export interface PromoPoint {
+  /** Also selects the icon in `CoursesPromo`, so keep the union in sync. */
+  id: "accredited" | "on-site" | "trainers" | "short-courses";
+  title: string;
+  body: string;
+}
+
+/** Selling points shown in the promo band on the /courses page. */
+export const PROMO_POINTS: PromoPoint[] = [
+  {
+    id: "accredited",
+    title: "BQA accredited",
+    body: "Every programme is accredited by the Botswana Qualifications Authority, so the certificates your team earns stand up to any audit.",
+  },
+  {
+    id: "on-site",
+    title: "We come to you",
+    body: "Training runs at your premises, on your own vehicles and plant — no travel costs, no fleet sitting idle in someone else's yard.",
+  },
+  {
+    id: "trainers",
+    title: "Highly qualified trainers",
+    body: "Instructors who have spent their careers in the cab and on site, and who assess to the same standard every single time.",
+  },
+  {
+    id: "short-courses",
+    title: "Short courses",
+    body: "Most programmes take a few days from start to certification, so operators are back on the job in the same week.",
+  },
+];
+
+export interface PromoSector {
+  /** Also selects the icon in `CoursesPromo`, so keep the union in sync. */
+  id: "commercial" | "government" | "mining" | "industrial";
+  label: string;
+}
+
+/** Sectors the courses are shaped around — the wide band in the courses promo. */
+export const PROMO_SECTORS: PromoSector[] = [
+  { id: "commercial", label: "Commercial companies" },
+  { id: "government", label: "Government & parastatals" },
+  { id: "mining", label: "Mining sector" },
+  { id: "industrial", label: "Industrial & plant" },
 ];
 
 export interface FAQ {
@@ -191,4 +273,11 @@ export const INDUSTRIES: string[] = [
   "Vehicle dealerships",
   "Engineering & plant hire",
   "Private individuals",
+];
+
+/** Short reassurances shown under the heading on the /contact page. */
+export const CONTACT_ASSURANCES: string[] = [
+  "Reply within one business day",
+  "On-site training, nationwide",
+  "BQA & HRDC accredited",
 ];

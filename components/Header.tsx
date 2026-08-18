@@ -11,7 +11,7 @@ const NAV_LINKS = [
   { label: "Why us", href: "#why-us" },
   { label: "Who we train", href: "#industries" },
   { label: "How it works", href: "#process" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Header() {
@@ -39,7 +39,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className="font-sans hidden items-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-800 sm:inline-flex dark:bg-accent-400 dark:text-brand-990 dark:hover:bg-accent-600"
+            className="font-sans hidden items-center gap-2 rounded-full bg-brand-700 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-800 sm:inline-flex dark:bg-accent-400 dark:text-brand-990 dark:hover:bg-accent-600"
           >
             Enquire Now
           </a>
