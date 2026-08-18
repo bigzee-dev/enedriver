@@ -9,7 +9,7 @@ export default function CourseHeader() {
         fill
         className="z-0 object-cover"
       />
-      <div className="absolute inset-0 z-0 bg-brand-900/60" />
+      <div className="absolute inset-0 z-0 bg-black/60" />
       <div className="absolute inset-0 w-full h-full flex items-center justify-center z-10">
         <p className="font-sans eyebrow text-sm uppercase text-accent-400">
           · Driver Training Courses ·

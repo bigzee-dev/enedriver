@@ -8,9 +8,9 @@ import Link from "next/link";
 
 const NAV_LINKS = [
   { label: "Courses", href: "/courses" },
-  { label: "Why us", href: "#why-us" },
-  { label: "Who we train", href: "#industries" },
-  { label: "How it works", href: "#process" },
+  { label: "Services", href: "/#services" },
+  { label: "Who we train", href: "/#industries" },
+  { label: "Why us", href: "/#why-us" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -26,13 +26,13 @@ export default function Header() {
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-base font-medium text-body transition-colors hover:text-brand-900 dark:hover:text-brand-50"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 

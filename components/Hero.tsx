@@ -91,14 +91,14 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="#contact"
+              href="/courses"
               className="border border-white/25 inline-flex items-center gap-2 rounded-lg bg-brand-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-600 uppercase"
             >
               View Courses
               <ArrowRightIcon className="h-5 w-5" />
             </a>
             <a
-              href="#courses"
+              href="#services"
               className="inline-flex items-center gap-2 bg-white/5 rounded-lg border border-white/25 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/60 hover:bg-white/5 uppercase"
             >
               Our Services

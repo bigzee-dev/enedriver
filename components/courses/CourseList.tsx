@@ -31,7 +31,7 @@ export default function CourseList() {
               {TargetMarkets.map((item) => (
                 <span
                   key={item}
-                  className="rounded-full border border-hairline bg-surface-2 px-2.5 py-1 text-xs font-medium text-muted"
+                  className="rounded-full border border-hairline bg-surface-2 px-2.5 py-1 text-xs font-medium text-body"
                 >
                   {item}
                 </span>

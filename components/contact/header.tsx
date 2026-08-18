@@ -104,8 +104,6 @@ export default function ContactHeader() {
           })}
         </div>
       </div>
-
-      <div aria-hidden className="lane-line" />
     </section>
   );
 }

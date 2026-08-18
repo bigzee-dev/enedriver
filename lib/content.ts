@@ -176,31 +176,36 @@ export const TargetMarkets: string[] = [
 export const EXPERIENCE_YEARS = 20;
 
 export interface PromoPoint {
-  /** Also selects the icon in `CoursesPromo`, so keep the union in sync. */
-  id: "accredited" | "on-site" | "trainers" | "short-courses";
+  id: "experience" | "accredited" | "on-site" | "short-courses";
+  /** Short figure shown in the mono "gauge" style — keep it a few characters. */
+  stat: string;
   title: string;
   body: string;
 }
 
-/** Selling points shown in the promo band on the /courses page. */
+/** Selling points shown as a stat band on the /courses page. */
 export const PROMO_POINTS: PromoPoint[] = [
   {
+    id: "experience",
+    stat: `${EXPERIENCE_YEARS}+`,
+    title: "Years in the industry",
+    body: "Two decades training drivers and operators for fleets, government departments and mines.",
+  },
+  {
     id: "accredited",
+    stat: "100%",
     title: "BQA accredited",
     body: "Every programme is accredited by the Botswana Qualifications Authority, so the certificates your team earns stand up to any audit.",
   },
   {
     id: "on-site",
+    stat: "On-site",
     title: "We come to you",
-    body: "Training runs at your premises, on your own vehicles and plant — no travel costs, no fleet sitting idle in someone else's yard.",
-  },
-  {
-    id: "trainers",
-    title: "Highly qualified trainers",
-    body: "Instructors who have spent their careers in the cab and on site, and who assess to the same standard every single time.",
+    body: "Training runs at your premises, on your own vehicles and plant — no travel costs, no fleet sitting idle in someone else’s yard.",
   },
   {
     id: "short-courses",
+    stat: "2–3 days",
     title: "Short courses",
     body: "Most programmes take a few days from start to certification, so operators are back on the job in the same week.",
   },
