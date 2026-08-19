@@ -40,7 +40,7 @@ export const COURSES: Course[] = [
     id: "emergency-vip",
     index: "02",
     title: "Emergency & VIP Vehicle Operation",
-    duration: "2 days",
+    duration: "3 days",
     summary:
       "Advanced VIP security, chauffeur and emergency-vehicle operation for high-pressure, time-critical driving where composure and precision are non-negotiable.",
     scope: [
@@ -56,7 +56,7 @@ export const COURSES: Course[] = [
     id: "commercial-handover",
     index: "03",
     title: "Commercial Vehicle Handover & Product Training",
-    duration: "2 days",
+    duration: "3 days",
     summary:
       "Structured handover and product familiarisation so operators understand every system before a new commercial vehicle enters service.",
     scope: [
@@ -72,7 +72,7 @@ export const COURSES: Course[] = [
     id: "earth-moving",
     index: "04",
     title: "Operating Earth-Moving Machines",
-    duration: "24 hours",
+    duration: "3 days",
     summary:
       "Practical competency training for plant and earth-moving equipment, preparing operators for safe, productive work on mine and construction sites.",
     scope: [
@@ -141,14 +141,14 @@ export const SERVICES: Service[] = [
     title: "Commercial Vehicle Deliveries & Collection",
     summary:
       "We deliver and collect commercial vehicles locally and across borders, so your fleet reaches site without tying up your own drivers.",
-    img: "/trucks.jpg",
+    img: "/carsline.jpg",
   },
   {
     id: "registration-bookings",
     title: "Vehicle Registration & Transport Tests",
     summary:
       "We handle commercial vehicle registration and arrange transport test appointments and bookings — the paperwork and queues are ours, not yours.",
-    img: "/71713.jpg",
+    img: "/beemer.jpg",
   },
 ];
 

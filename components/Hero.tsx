@@ -92,31 +92,19 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="/courses"
-              className="border border-white/25 inline-flex items-center gap-2 rounded-lg bg-brand-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-600 uppercase"
+              className="border border-white/25 inline-flex items-center gap-2 rounded-xl bg-brand-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent-600 uppercase"
             >
               View Courses
               <ArrowRightIcon className="h-5 w-5" />
             </a>
             <a
               href="#services"
-              className="inline-flex items-center gap-2 bg-white/5 rounded-lg border border-white/25 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/60 hover:bg-white/5 uppercase"
+              className="inline-flex items-center gap-2 bg-white/5 rounded-xl border border-white/25 px-6 py-3 text-sm font-medium text-white transition-colors hover:border-white/60 hover:bg-white/5 uppercase"
             >
               Our Services
               <ArrowRightIcon className="h-5 w-5" />
             </a>
           </div>
-
-          {/* <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3">
-            {ACCREDITATIONS.map((item) => (
-              <span
-                key={item}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-brand-100"
-              >
-                <span className="h-2 w-2 rounded-full bg-accent-400" />
-                {item}
-              </span>
-            ))}
-          </div> */}
         </div>
 
         {/* Credential panel */}
@@ -124,7 +112,7 @@ export default function Hero() {
           <div className="rounded-2xl  bg-slate-400/50 p-2 backdrop-blur-sm ">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
               <Image
-                src="/enehero.png"
+                src="/enehero.webp"
                 alt="hero image"
                 fill
                 className="object-cover"

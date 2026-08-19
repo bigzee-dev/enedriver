@@ -67,7 +67,7 @@ export default function ContactHeader() {
           recommended programme, a schedule and a quote.
         </p>
 
-        <div className="mt-10 grid gap-3 sm:grid-cols-3">
+        <div className="mt-10 grid gap-3 sm:grid-cols-2">
           {CHANNELS.map(({ label, value, href, external, Icon }) => {
             const body = (
               <>

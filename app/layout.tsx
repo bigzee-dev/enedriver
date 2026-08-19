@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: `${COMPANY_NAME} — Accredited Driver Training in Botswana`,
   description:
     "BQA & HRDC accredited driver and plant-operator training in Botswana. Advanced defensive driving, VIP & emergency operation, commercial handover and earth-moving courses — delivered at your site.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

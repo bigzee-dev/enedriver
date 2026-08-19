@@ -92,7 +92,7 @@ export default function CourseLinks() {
           <div className="mt-8 flex justify-center">
             <Link
               href="/courses"
-              className="border border-neutral-400 inline-flex items-center gap-2 rounded-lg bg-brand-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-800 uppercase"
+              className="border border-neutral-400 inline-flex items-center gap-2 rounded-xl bg-brand-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-800 uppercase"
             >
               Learn more about our courses
               <ArrowRightIcon className="h-4 w-4" />

@@ -47,7 +47,7 @@ export default function CtaBanner() {
         </div>
         <a
           href="#courses"
-          className="flex-shrink-0 inline-flex items-center gap-3 px-8 py-4 bg-[#0A0A0A]/90 text-white/80 font-display font-bold text-base rounded-lg hover:bg-[#1A1A1A] transition-colors duration-300"
+          className="flex-shrink-0 inline-flex items-center gap-3 px-8 py-3 bg-[#0A0A0A]/90 text-white/80 font-display font-medium text-base rounded-xl hover:bg-[#1A1A1A] transition-colors duration-300 uppercase"
         >
           View Courses
           <svg

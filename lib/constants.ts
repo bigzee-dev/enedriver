@@ -30,15 +30,16 @@ export const WHATSAPP_MESSAGE_LINK = `${WHATSAPP_LINK}?text=${encodeURIComponent
 )}`;
 
 // PLACEHOLDER — confirm with client.
-export const FACEBOOK_URL = "https://www.facebook.com/eedrivertraining";
+export const FACEBOOK_URL =
+  "https://web.facebook.com/profile.php?id=61587554653863";
 
 // PLACEHOLDER — confirm with client.
-export const EMAIL_ADDRESS = "info@eedrivertraining.co.bw";
+export const EMAIL_ADDRESS = "info@enedrivertrainingconsultancy.co.bw";
 
 export const EMAIL_LINK = `mailto:${EMAIL_ADDRESS}`;
 
 // PLACEHOLDER — confirm with client.
-export const LOCATION_ADDRESS = "Mogonono, Gaborone, Botswana";
+export const LOCATION_ADDRESS = "BKT Phase 1, Plot 15194, Gaborone, Botswana";
 
 /** Base of operations. The consultancy is mobile and trains nationwide. */
 export const CITY = "Gaborone";

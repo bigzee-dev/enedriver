@@ -11,13 +11,14 @@ import {
   EMAIL_ADDRESS,
   LOCATION_ADDRESS,
 } from "@/lib/constants";
+import Link from "next/link";
 
 const NAV = [
-  { label: "Courses", href: "#courses" },
-  { label: "Why us", href: "#why-us" },
-  { label: "Who we train", href: "#industries" },
-  { label: "How it works", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  { label: "Courses", href: "/courses" },
+  { label: "Services", href: "/#services" },
+  { label: "Who we train", href: "/#industries" },
+  { label: "Why us", href: "/#why-us" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Footer() {
@@ -62,12 +63,12 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               {NAV.map((item) => (
                 <li key={item.href}>
-                  <a
+                  <Link
                     href={item.href}
                     className="text-sm text-muted transition-colors hover:text-heading"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

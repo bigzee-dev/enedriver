@@ -62,11 +62,10 @@ export default function Qualifications() {
               We deliver training and consultancy you can trust.
             </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-body">
-              E&amp;E Driver Training and Consultancy is registered with the
-              Human Resource Development Council (HRDC) and accredited by the
-              Botswana Qualifications Authority (BQA). We offer driver training
-              courses, consultancy and services across the transportation
-              sector.
+              E&amp;E Driver Training Consultancy is registered with the Human
+              Resource Development Council (HRDC) and accredited by the Botswana
+              Qualifications Authority (BQA). We offer driver training courses,
+              consultancy and services across the transportation sector.
             </p>
           </div>
         </div>
