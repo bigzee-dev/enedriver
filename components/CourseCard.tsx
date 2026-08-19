@@ -34,8 +34,8 @@ export default function CourseCard({ course }: { course: Course }) {
       </div>
 
       {/* Information */}
-      <div className="flex flex-1 flex-col px-6 pb-4 pt-2">
-        <p className="mt-2 text-sm leading-relaxed text-white bg-green-700 rounded-2xl px-1.5 py-0.5 inline-flex items-center gap-2 max-w-max">
+      <div className="bg-surface-2 flex flex-1 flex-col px-6 pb-4 pt-2">
+        <p className="mt-2 text-sm leading-relaxed text-white bg-slate-700 rounded-2xl px-1.5 py-0.5 inline-flex items-center gap-2 max-w-max">
           <BsFillClockFill className="h-4 w-4 text-yellow-300" />{" "}
           <strong>{course.duration}</strong>
         </p>

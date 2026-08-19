@@ -205,7 +205,7 @@ export const PROMO_POINTS: PromoPoint[] = [
   },
   {
     id: "short-courses",
-    stat: "2–3 days",
+    stat: "3 days",
     title: "Short courses",
     body: "Most programmes take a few days from start to certification, so operators are back on the job in the same week.",
   },

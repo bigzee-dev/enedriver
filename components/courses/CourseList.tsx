@@ -23,9 +23,9 @@ export default function CourseList() {
               <CourseCard key={course.id} course={course} />
             ))}
           </div>
-          <div className="mt-10">
-            <p className="eyebrow font-sans text-base text-body font-medium dark:text-accent-400 border-b border-brand-700 pb-0.5">
-              <FaFileCircleCheck className="mr-2 inline-block h-8 w-8 text-brand-900 dark:text-accent-400" />
+          <div className="mt-20 max-w-3xl mx-auto">
+            <p className="eyebrow font-sans text-base text-body font-semibold dark:text-accent-400 border-b border-brand-700 pb-1">
+              <FaFileCircleCheck className="mr-2 inline-block h-10 w-10 text-brand-900 dark:text-accent-400" />
               Our Courses are suitable for:
             </p>
             <div className="mt-6 flex flex-wrap gap-2">

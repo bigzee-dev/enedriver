@@ -5,7 +5,7 @@ export default function CourseHeader() {
     <section className="relative w-full h-60">
       <Image
         src="/71727.jpg"
-        alt="Zima Packaging — quality products since 2013"
+        alt="E&amp;E Driver Training Consultancy — accredited driver training in Botswana"
         fill
         className="z-0 object-cover"
       />
