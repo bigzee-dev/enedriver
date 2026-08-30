@@ -1,5 +1,5 @@
 import Logo from "./Logo";
-import { WhatsAppIcon, FacebookIcon } from "./Icons";
+import { WhatsAppIcon, FacebookIcon, TikTokIcon } from "./Icons";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoMailOutline, IoLocationOutline } from "react-icons/io5";
 import {
@@ -7,6 +7,7 @@ import {
   WHATSAPP_MESSAGE_LINK,
   WHATSAPP_NUMBER,
   FACEBOOK_URL,
+  TIKTOK_URL,
   EMAIL_LINK,
   EMAIL_ADDRESS,
   LOCATION_ADDRESS,
@@ -51,6 +52,15 @@ export default function Footer() {
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline text-brand-800 transition-colors hover:bg-brand-900 hover:text-white dark:text-brand-100"
               >
                 <FacebookIcon className="h-5 w-5" />
+              </a>
+              <a
+                href={TIKTOK_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline text-brand-800 transition-colors hover:bg-brand-900 hover:text-white dark:text-brand-100"
+              >
+                <TikTokIcon className="h-5 w-5" />
               </a>
             </div>
           </div>

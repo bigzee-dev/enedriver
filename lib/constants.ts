@@ -33,6 +33,8 @@ export const WHATSAPP_MESSAGE_LINK = `${WHATSAPP_LINK}?text=${encodeURIComponent
 export const FACEBOOK_URL =
   "https://web.facebook.com/profile.php?id=61587554653863";
 
+export const TIKTOK_URL = "https://www.tiktok.com/@enedrivertrainingconsult";
+
 // PLACEHOLDER — confirm with client.
 export const EMAIL_ADDRESS = "info@enedrivertrainingconsultancy.co.bw";
 
