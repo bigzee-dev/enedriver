@@ -48,12 +48,12 @@ export default function CourseLinks() {
           <div className="overflow-hidden rounded-xl border border-neutral-500">
             <div className="grid grid-cols-1">
               {/* ── Right — Image ── */}
-              <div className="relative  flex min-h-[320px] items-center justify-center bg-black/20  lg:min-h-0">
+              <div className="relative px-2 flex min-h-[320px] items-center justify-center bg-black/20  lg:min-h-0">
                 {/* Gradient overlays for depth */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent lg:from-black/20" />
                 {/* Stats row */}
-                <div className="grid grid-cols-2 gap-4 py-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-5">
                   {COURSES.map((course) => (
                     <div
                       key={course.id}

@@ -18,7 +18,6 @@ const NAV = [
   { label: "Services", href: "/#services" },
   { label: "Who we train", href: "/#industries" },
   { label: "Why us", href: "/#why-us" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export default function Footer() {
@@ -26,7 +25,7 @@ export default function Footer() {
     <footer className="bg-surface-2 pt-16">
       <div className="lane-line" aria-hidden />
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8">
-        <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <Logo />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted">
@@ -76,7 +75,33 @@ export default function Footer() {
 
           <div>
             <h3 className="font-display text-sm font-bold uppercase tracking-wider text-heading">
-              Contact
+              Company
+            </h3>
+            <ul className="mt-4 space-y-3">
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-sm text-muted transition-colors hover:text-heading"
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="/companyprofile.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted transition-colors hover:text-heading"
+                >
+                  Company Profile
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-display text-sm font-bold uppercase tracking-wider text-heading">
+              Get in touch
             </h3>
             <ul className="mt-4 space-y-4 text-sm text-muted">
               <li className="flex items-start gap-3">
