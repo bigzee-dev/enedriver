@@ -45,46 +45,24 @@ export default function CourseLinks() {
           </div>
         </div>
         <div className="mx-auto max-w-5xl mt-8">
-          <div className="overflow-hidden rounded-xl border border-neutral-500">
+          <div className="overflow-hidden">
             <div className="grid grid-cols-1">
-              {/* ── Right — Image ── */}
-              <div className="relative px-2 flex min-h-[320px] items-center justify-center bg-black/20  lg:min-h-0">
-                {/* Gradient overlays for depth */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent lg:from-black/20" />
-                {/* Stats row */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-5">
-                  {COURSES.map((course) => (
-                    <div
-                      key={course.id}
-                      className="relative flex h-full justify-center items-center rounded-sm border border-neutral-400 bg-neutral-700/60 px-5 py-4 text-center backdrop-blur-md first:pl-0 last:pr-0"
-                    >
-                      {/* Fixed at the top of every card so the numbers line up
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-5">
+                {COURSES.map((course) => (
+                  <div
+                    key={course.id}
+                    className="relative flex h-full justify-center items-center rounded-sm border border-neutral-400 bg-neutral-700/60 px-5 py-4 text-center backdrop-blur-md first:pl-0 last:pr-0"
+                  >
+                    {/* Fixed at the top of every card so the numbers line up
                           regardless of how many lines the title wraps to. */}
-                      <span className="absolute top-0 left-0 flex h-6 w-6 shrink-0 items-center justify-center rounded-tl-sm rounded-br-sm bg-white/60 font-mono text-sm font-semibold text-brand-990">
-                        {course.index}
-                      </span>
-                      <p
-                        className={`font-sans mt-1 text-base  text-neutral-200`}
-                      >
-                        {course.title}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-                {/* Floating brand stamp */}
-                {/* <div className="absolute bottom-6 right-6 border border-neutral-700/60 bg-black/70 p-5 backdrop-blur-sm">
-                  <p className="font-content text-[10px] uppercase tracking-[0.25em] text-neutral-400">
-                    Established
-                  </p>
-                  <p className={`${lora.className} mt-1 text-4xl font-semibold text-red-600`}>
-                    2013
-                  </p>
-                  <div className="mt-2 h-px bg-gradient-to-r from-blue-700 via-red-600 to-yellow-500" />
-                  <p className="mt-2 font-content text-[10px] uppercase tracking-[0.2em] text-neutral-400">
-                    Maun, Botswana
-                  </p>
-                </div> */}
+                    <span className="absolute top-0 left-0 flex h-6 w-6 shrink-0 items-center justify-center rounded-tl-sm rounded-br-sm bg-white/60 font-mono text-sm font-semibold text-brand-990">
+                      {course.index}
+                    </span>
+                    <p className={`font-sans mt-1 text-base  text-neutral-200`}>
+                      {course.title}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
