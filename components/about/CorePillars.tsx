@@ -16,7 +16,7 @@ export default function CorePillars() {
         <SectionHeading
           eyebrow="What we stand on"
           title="Our core pillars"
-          intro="Four things every client gets, whether we are training a single operator or an entire fleet."
+          intro="Four things every client gets, whether we are training a small company or a huge mining operation."
           tone="inverted"
         />
 

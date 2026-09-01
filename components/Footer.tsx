@@ -172,6 +172,17 @@ export default function Footer() {
             © {2026} {COMPANY_NAME}. All rights reserved.
           </p>
           <p>BQA Accredited · HRDC Registered</p>
+          <p>
+            Developed by{" "}
+            <a
+              href="https://deltaworx.co.bw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium transition-colors hover:text-heading"
+            >
+              Deltaworx
+            </a>
+          </p>
         </div>
       </div>
     </footer>
