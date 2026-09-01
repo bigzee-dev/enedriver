@@ -334,7 +334,7 @@ export default function ContactForm() {
                     pattern={PHONE_PATTERN}
                     maxLength={20}
                     autoComplete="tel"
-                    placeholder="+267 71 368 178"
+                    placeholder="+267 71 234 567"
                     aria-invalid={Boolean(fieldErrors.phone)}
                     aria-describedby={
                       fieldErrors.phone ? "phone-error" : undefined
