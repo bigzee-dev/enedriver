@@ -35,6 +35,9 @@ export const FACEBOOK_URL =
 
 export const TIKTOK_URL = "https://www.tiktok.com/@enedrivertrainingconsult";
 
+export const INSTAGRAM_URL =
+  "https://www.instagram.com/enedrivertrainingconsultancy?utm_source=qr";
+
 // PLACEHOLDER — confirm with client.
 export const EMAIL_ADDRESS = "info@enedrivertrainingconsultancy.co.bw";
 

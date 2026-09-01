@@ -4,6 +4,29 @@ import Image from "next/image";
 
 const ACCREDITATIONS = ["BQA Accredited", "HRDC Registered"];
 
+// Botswana flag colours
+const BW_BLUE = "#75AADB";
+const BW_BLACK = "#000000";
+
+function BotswanaFlag({ className }: { className?: string }) {
+  return (
+    <div
+      className={className}
+      style={{
+        overflow: "hidden",
+        borderRadius: 6,
+        boxShadow: "0 4px 18px rgba(0,0,0,0.4)",
+      }}
+    >
+      <div style={{ height: "35%", background: BW_BLUE }} />
+      <div style={{ height: "5%", background: "#fff" }} />
+      <div style={{ height: "20%", background: BW_BLACK }} />
+      <div style={{ height: "5%", background: "#fff" }} />
+      <div style={{ height: "35%", background: BW_BLUE }} />
+    </div>
+  );
+}
+
 export default function Hero() {
   return (
     <section
@@ -72,7 +95,8 @@ export default function Hero() {
         />
       </svg>
 
-      <div className="relative mx-auto grid max-w-7xl gap-y-12 gap-x-12 px-5 py-20 sm:px-2 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:py-24">
+      <div className="relative mx-auto grid max-w-7xl gap-y-12 gap-x-12 px-5 py-20 sm:px-2 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:py-20">
+        <BotswanaFlag className="absolute right-6 top-6 h-8 w-12" />
         <div>
           <span className="eyebrow inline-flex items-center gap-2 text-accent-400">
             · E&E DRIVER TRAINING CONSULTANCY ·

@@ -1,5 +1,10 @@
 import Logo from "./Logo";
-import { WhatsAppIcon, FacebookIcon, TikTokIcon } from "./Icons";
+import {
+  WhatsAppIcon,
+  FacebookIcon,
+  TikTokIcon,
+  InstagramIcon,
+} from "./Icons";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoMailOutline, IoLocationOutline } from "react-icons/io5";
 import {
@@ -8,6 +13,7 @@ import {
   WHATSAPP_NUMBER,
   FACEBOOK_URL,
   TIKTOK_URL,
+  INSTAGRAM_URL,
   EMAIL_LINK,
   EMAIL_ADDRESS,
   LOCATION_ADDRESS,
@@ -62,6 +68,15 @@ export default function Footer() {
               >
                 <TikTokIcon className="h-5 w-5" />
               </a>
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline text-brand-800 transition-colors hover:bg-brand-900 hover:text-white dark:text-brand-100"
+              >
+                <InstagramIcon className="h-5 w-5" />
+              </a>
             </div>
           </div>
 
@@ -88,6 +103,14 @@ export default function Footer() {
               Company
             </h3>
             <ul className="mt-4 space-y-3">
+              <li>
+                <Link
+                  href="/about"
+                  className="text-sm text-muted transition-colors hover:text-heading"
+                >
+                  About Us
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/contact"

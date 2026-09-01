@@ -8,10 +8,11 @@ import { WHATSAPP_MESSAGE_LINK, FACEBOOK_URL } from "@/lib/constants";
 import Link from "next/link";
 
 const NAV_LINKS = [
+  { label: "About Us", href: "/about" },
   { label: "Courses", href: "/courses" },
   { label: "Services", href: "/#services" },
   { label: "Who we train", href: "/#industries" },
-  { label: "Why us", href: "/#why-us" },
+
   { label: "Contact Us", href: "/contact" },
 ];
 

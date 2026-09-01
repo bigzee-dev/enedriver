@@ -286,3 +286,49 @@ export const CONTACT_ASSURANCES: string[] = [
   "On-site training, nationwide",
   "BQA & HRDC accredited",
 ];
+
+/**
+ * The company story shown on /about — one string per paragraph so the section
+ * stays presentational and the wording can be edited in one place.
+ */
+export const ABOUT_STORY: string[] = [
+  "E&E Driver Training Consultancy is a Botswana-based driver and operator training company with our instructors having over 20 years of experience in developing professional drivers and machine operators. The consultancy provides accredited driver training, operator development and fleet safety solutions to businesses, government departments, parastatals, mines, construction companies, security organisations and private individuals across Botswana.",
+  "The company specialises in practical, safety-focused training designed to help drivers and operators work confidently, responsibly and efficiently. Its programs cover a wide range of licence categories and specialist areas, including defensive driving, 4x4 and heavy-duty vehicle operation, emergency and VIP driving, commercial vehicle handover training, and earth-moving machinery operation.",
+  "As a mobile training consultancy, E&E brings its instructors directly to clients’ premises and conducts training using their vehicles and equipment, helping organisations reduce downtime and train their teams within their normal operating environment. With BQA accreditation, HRDC registration and experienced instructors, E&E Driver Training Consultancy is committed to raising the standard of driver and machinery safety throughout Botswana.",
+];
+
+export interface CorePillar {
+  id: string;
+  /** Mono index shown in the corner of each pillar, in the "gauge" style. */
+  index: string;
+  title: string;
+  body: string;
+}
+
+/** The four things the consultancy competes on — the pillars band on /about. */
+export const CORE_PILLARS: CorePillar[] = [
+  {
+    id: "accreditation",
+    index: "01",
+    title: "Accreditation",
+    body: "Fully BQA and HRDC accredited, which makes our training HRDC levy claimable.",
+  },
+  {
+    id: "versatility",
+    index: "02",
+    title: "Versatility",
+    body: "Training for all licence classes, specialised emergency vehicles, VIP driving and heavy earth-moving machinery.",
+  },
+  {
+    id: "convenience",
+    index: "03",
+    title: "Convenience",
+    body: "100% mobile training, delivered directly at client operational sites across Botswana.",
+  },
+  {
+    id: "value",
+    index: "04",
+    title: "Value",
+    body: "Commercial vehicle handover training ensures assets are operated safely from day one.",
+  },
+];
