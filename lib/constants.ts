@@ -55,7 +55,7 @@ export const COUNTRY = "Botswana";
  * PLACEHOLDER path — confirm the exact route with the API owner.
  */
 export const CONTACT_API_URL =
-  "https://contactformapi.deltaworx.co.bw/api/contact*";
+  "https://contactformapi.deltaworx.co.bw/api/contact";
 /*https://emailapi.deltaworx.co.bw/api/contact*/
 /** How long we wait on the mail service before showing the user an error. */
 export const CONTACT_API_TIMEOUT_MS = 15_000;
