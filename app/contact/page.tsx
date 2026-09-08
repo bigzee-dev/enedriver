@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: `Contact Us — ${COMPANY_NAME}`,
   description:
     "Get in touch with E&E Driver Training Consultancy for a quote or course schedule. Send an enquiry, message us on WhatsApp or email us — we train on your site, anywhere in Botswana.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function Contact() {

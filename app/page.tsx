@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import Hero from "@/components/Hero";
 import AccreditationBar from "@/components/AccreditationBar";
 import WhatWeDo from "@/components/whatwedo";
@@ -10,6 +12,11 @@ import CtaBanner from "@/components/ctabanner";
 import Process from "@/components/Process";
 import ContactCTA from "@/components/ContactCTA";
 import FAQ from "@/components/FAQ";
+
+// Title and description come from the root layout, which is written for this page.
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (

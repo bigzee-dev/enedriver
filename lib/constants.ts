@@ -59,3 +59,14 @@ export const CONTACT_API_URL =
 /*https://emailapi.deltaworx.co.bw/api/contact*/
 /** How long we wait on the mail service before showing the user an error. */
 export const CONTACT_API_TIMEOUT_MS = 15_000;
+
+/**
+ * Public origin of the deployed site — no trailing slash.
+ * Used by app/sitemap.ts, app/robots.ts and `metadataBase` so crawlers and
+ * social scrapers get absolute URLs. Set NEXT_PUBLIC_SITE_URL to override on
+ * preview/staging deploys.
+ */
+export const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://enedrivertrainingconsultancy.co.bw"
+).replace(/\/+$/, "");

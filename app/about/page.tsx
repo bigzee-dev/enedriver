@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: `About Us — ${COMPANY_NAME}`,
   description:
     "E&E Driver Training Consultancy is a Botswana-based driver and operator training company with over 20 years of instructor experience — BQA accredited, HRDC registered and 100% mobile.",
+  alternates: { canonical: "/about" },
 };
 
 export default function About() {
