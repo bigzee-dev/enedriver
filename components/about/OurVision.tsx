@@ -9,7 +9,10 @@ import { OUR_VISION } from "@/lib/content";
  */
 export default function OurVision() {
   return (
-    <section id="our-vision" className="scroll-mt-20 py-16 sm:py-16 sm:pb-12">
+    <section
+      id="our-vision"
+      className="bg-surface-2 scroll-mt-20 py-16 sm:py-16 border-b border-neutral-300"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <div className="relative grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-14">
           {/* Copy */}

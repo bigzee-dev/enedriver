@@ -80,7 +80,7 @@ export default function AboutHeader() {
         <p
           className={`max-w-2xl font-sans mt-4 text-base leading-relaxed sm:text-base text-ink-400`}
         >
-          A team dedicayed to providing top-notch driver training and
+          A team dedicated to providing top-notch driver training and
           consultancy services, ensuring safety and efficiency on the roads.
         </p>
       </div>

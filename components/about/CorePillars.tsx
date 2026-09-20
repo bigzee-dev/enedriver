@@ -10,7 +10,7 @@ export default function CorePillars() {
   return (
     <section
       id="core-pillars"
-      className="bg-surface-2 scroll-mt-20 dark:bg-brand-950 py-20 text-white sm:py-20 border-b border-neutral-300"
+      className="scroll-mt-20 dark:bg-brand-950 py-20 text-white sm:py-20 border-b border-neutral-300"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-8">
         <SectionHeading

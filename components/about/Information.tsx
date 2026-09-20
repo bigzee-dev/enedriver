@@ -12,7 +12,7 @@ export default function Information() {
   return (
     <section
       id="our-story"
-      className="bg-surface w-6xl mx-auto scroll-mt-20 py-20 sm:py-24 sm:pb-12"
+      className="bg-surface w-6xl mx-auto scroll-mt-20 py-20 sm:py-24 sm:pb-6"
     >
       <div className="max-w-4xl px-4 sm:px-8">
         <div className="grid ">
