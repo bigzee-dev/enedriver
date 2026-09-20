@@ -10,14 +10,14 @@ export default function CorePillars() {
   return (
     <section
       id="core-pillars"
-      className="scroll-mt-20 bg-brand-950 py-20 text-white sm:py-24"
+      className="bg-surface-2 scroll-mt-20 dark:bg-brand-950 py-20 text-white sm:py-20 border-b border-neutral-300"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-8">
         <SectionHeading
           eyebrow="What we stand on"
           title="Our core pillars"
           intro="Four things every client gets, whether we are training a small company or a huge mining operation."
-          tone="inverted"
+          tone="default"
         />
 
         <ul className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-white/15 sm:grid-cols-2">

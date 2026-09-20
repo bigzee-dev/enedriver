@@ -45,7 +45,7 @@ const specs = [
 export default function WhatWeDo() {
   return (
     <div className="w-full ">
-      <section className="bg-background px-6 py-20 md:px-12 lg:px-20">
+      <section className="bg-surface px-6 py-20 md:px-12 lg:px-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-2">
           <div className="flex flex-col items-start justify-between gap-12 lg:flex-row lg:items-center lg:gap-12">
             {/* Left Content */}

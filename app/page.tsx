@@ -30,7 +30,10 @@ export default function Home() {
         <WhyChooseUs />
         <Services />
         <Industries />
-        <CtaBanner />
+        <div className="bg-surface-2 pb-14 border-b border-neutral-300">
+          <CtaBanner />
+        </div>
+
         <Process />
         <ContactCTA />
         <FAQ />

@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 import AboutHeader from "@/components/about/header";
 import CorePillars from "@/components/about/CorePillars";
 import Information from "@/components/about/Information";
+import OurMission from "@/components/about/OurMission";
+import OurVision from "@/components/about/OurVision";
+import Accreditations from "@/components/about/accreditations";
 import CtaBanner from "@/components/ctabanner";
 import { COMPANY_NAME } from "@/lib/constants";
 
@@ -19,7 +22,10 @@ export default function About() {
       <AboutHeader />
       <Information />
       <CorePillars />
-      <div className="mt-20 mb-4">
+      <OurVision />
+      <OurMission />
+      <Accreditations />
+      <div className="bg-surface-2 pt-8 pb-12">
         <CtaBanner />
       </div>
     </main>

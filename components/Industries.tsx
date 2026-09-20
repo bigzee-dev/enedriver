@@ -4,7 +4,10 @@ import { CheckIcon } from "./Icons";
 
 export default function Industries() {
   return (
-    <section id="industries" className="scroll-mt-20 py-20 sm:py-24">
+    <section
+      id="industries"
+      className="bg-surface-2 scroll-mt-20 py-20 sm:py-24"
+    >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <SectionHeading

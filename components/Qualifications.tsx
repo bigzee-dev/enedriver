@@ -2,31 +2,34 @@ import Image from "next/image";
 import { ACCREDITATIONS } from "@/lib/content";
 
 // Botswana flag colours
-const BW_BLUE = "#75AADB";
-const BW_BLACK = "#000000";
+// const BW_BLUE = "#75AADB";
+// const BW_BLACK = "#000000";
 
-function BotswanaFlag({ className }: { className?: string }) {
-  return (
-    <div
-      className={className}
-      style={{
-        overflow: "hidden",
-        borderRadius: 6,
-        boxShadow: "0 4px 18px rgba(0,0,0,0.4)",
-      }}
-    >
-      <div style={{ height: "35%", background: BW_BLUE }} />
-      <div style={{ height: "5%", background: "#fff" }} />
-      <div style={{ height: "20%", background: BW_BLACK }} />
-      <div style={{ height: "5%", background: "#fff" }} />
-      <div style={{ height: "35%", background: BW_BLUE }} />
-    </div>
-  );
-}
+// function BotswanaFlag({ className }: { className?: string }) {
+//   return (
+//     <div
+//       className={className}
+//       style={{
+//         overflow: "hidden",
+//         borderRadius: 6,
+//         boxShadow: "0 4px 18px rgba(0,0,0,0.4)",
+//       }}
+//     >
+//       <div style={{ height: "35%", background: BW_BLUE }} />
+//       <div style={{ height: "5%", background: "#fff" }} />
+//       <div style={{ height: "20%", background: BW_BLACK }} />
+//       <div style={{ height: "5%", background: "#fff" }} />
+//       <div style={{ height: "35%", background: BW_BLUE }} />
+//     </div>
+//   );
+// }
 
 export default function Qualifications() {
   return (
-    <section id="qualifications" className="scroll-mt-20 py-20 sm:py-24">
+    <section
+      id="qualifications"
+      className="bg-surface scroll-mt-20 py-20 sm:py-24"
+    >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid overflow-hidden rounded-2xl border border-hairline lg:grid-cols-[5fr_7fr]">
           {/* ── Left — accrediting bodies on the dark panel ── */}
@@ -57,7 +60,7 @@ export default function Qualifications() {
 
           {/* ── Right — the statement, vertically centred ── */}
           <div className="flex flex-col justify-center bg-surface-2 p-8 sm:p-12">
-            <BotswanaFlag className="h-7 w-11" />
+            {/* <BotswanaFlag className="h-7 w-11" /> */}
             <h2 className="mt-4 font-display text-3xl font-semibold tracking-wide sm:text-4xl">
               We deliver training and consultancy you can trust.
             </h2>

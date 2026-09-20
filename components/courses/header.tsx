@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CourseHeader() {
   return (
-    <section className="relative w-full h-60">
+    <section className="relative w-full h-70">
       <Image
         src="/71727.jpg"
         alt="E&amp;E Driver Training Consultancy — accredited driver training in Botswana"

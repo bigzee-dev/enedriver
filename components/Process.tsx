@@ -25,7 +25,7 @@ const STEPS = [
 
 export default function Process() {
   return (
-    <section id="process" className="scroll-mt-20 bg-surface py-20 sm:py-24">
+    <section id="process" className="scroll-mt-20 bg-surface py-20 sm:py-20">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="How engagement works"

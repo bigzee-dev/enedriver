@@ -72,10 +72,17 @@ export default function AboutHeader() {
         className="pointer-events-none absolute -bottom-40 -left-24 h-60 w-80 rounded-full bg-accent-400/10 blur-3xl"
       />
 
-      <div className="flex justify-center relative mx-auto max-w-6xl px-4 py-14 sm:px-8 sm:py-16">
-        <h1 className="font-display text-4xl font-bold text-white sm:text-6xl">
-          About Us
+      <div className="flex flex-col items-start relative mx-auto max-w-6xl px-4 py-14 sm:px-8 sm:py-16">
+        <span className="eyebrow text-accent-400 uppercase">About us</span>
+        <h1 className="mt-4 font-display text-4xl font-bold text-white sm:text-6xl">
+          Who We Are
         </h1>
+        <p
+          className={`max-w-2xl font-sans mt-4 text-base leading-relaxed sm:text-base text-ink-400`}
+        >
+          A team dedicayed to providing top-notch driver training and
+          consultancy services, ensuring safety and efficiency on the roads.
+        </p>
       </div>
     </section>
   );

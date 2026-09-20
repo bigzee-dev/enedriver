@@ -332,3 +332,21 @@ export const CORE_PILLARS: CorePillar[] = [
     body: "Commercial vehicle handover training ensures assets are operated safely from day one.",
   },
 ];
+
+/**
+ * The mission statement shown on /about — one string per paragraph, matching
+ * the ABOUT_STORY shape so the section stays purely presentational.
+ */
+export const OUR_MISSION: string[] = [
+  "Our mission is to champion driver and machinery safety across Botswana through high-quality and accessible training. We deliver flexible courses directly to our customers, making professional driver training easily accessible for organisations across the country.",
+  "We are committed to developing competent, responsible and safety-conscious drivers who perform their duties confidently and efficiently. Through practical, workplace-focused training, we help businesses reduce operational risks, protect their people and promote the safe use of vehicles and machinery.",
+];
+
+/**
+ * The vision statement shown on /about — same one-string-per-paragraph shape
+ * as OUR_MISSION so both sections share a component structure.
+ */
+export const OUR_VISION: string[] = [
+  "Our vision is to drive a zero-harm transport and industrial sector in Botswana through world-class driver education and development. We aspire to be a trusted leader in driver and machinery training, recognised for the quality, professionalism and practical value of our programs.",
+  "",
+];
